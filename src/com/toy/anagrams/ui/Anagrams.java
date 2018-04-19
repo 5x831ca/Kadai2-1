@@ -118,7 +118,7 @@ public class Anagrams extends JFrame {
         fileMenu = new javax.swing.JMenu();
         aboutMenuItem = new javax.swing.JMenuItem();
         exitMenuItem = new javax.swing.JMenuItem();
-
+        
         setTitle("アナグラム");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
@@ -129,7 +129,7 @@ public class Anagrams extends JFrame {
         mainPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(12, 12, 12, 12));
         mainPanel.setMinimumSize(new java.awt.Dimension(297, 200));
         mainPanel.setLayout(new java.awt.GridBagLayout());
-
+        
         scrambledLabel.setText("Scrambled Word:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;

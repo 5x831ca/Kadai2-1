@@ -80,7 +80,7 @@ public class About extends JDialog {
         copyrightTextArea.setEditable(false);
         copyrightTextArea.setLineWrap(true);
         copyrightTextArea.setRows(8);
-        copyrightTextArea.setText("Anagrams\n\nCopyright (c) 2003  Irritable Enterprises, Inc.");
+        copyrightTextArea.setText("チームwest g16922 小林千夏/g16945 徳丸瑞季/g16949 山越寛子");
         copyrightTextArea.setWrapStyleWord(true);
         copyrightTextArea.setBorder(null);
         copyrightTextArea.setFocusable(false);
