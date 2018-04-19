@@ -36,7 +36,6 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Toolkit;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
 /**
@@ -130,8 +129,6 @@ public class Anagrams extends JFrame {
         mainPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(12, 12, 12, 12));
         mainPanel.setMinimumSize(new java.awt.Dimension(297, 200));
         mainPanel.setLayout(new java.awt.GridBagLayout());
-
-        JLabel label2 = new JLabel();
         
         scrambledLabel.setText("Scrambled Word:");
         gridBagConstraints = new java.awt.GridBagConstraints();
