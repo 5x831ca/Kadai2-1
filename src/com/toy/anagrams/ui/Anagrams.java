@@ -254,7 +254,19 @@ public class Anagrams extends JFrame {
     }//GEN-LAST:event_aboutMenuItemActionPerformed
 
     private void nextTrialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextTrialActionPerformed
+        int i = selectLevel.getSelectedIndex();
         wordIdx = (wordIdx + 1) % wordLibrary.getSize();
+        feedbackLabel.setText(" ");
+        if(i==0)scrambledWord.setText(wordLibrary.getScrambledWord(wordIdx));
+        if(i==1){
+        	String f=wordLibrary.getScrambledWord(wordIdx);
+        	scrambledWord.setText(wordLibrary.getWord(f));
+        }
+        if(i==2){
+        	String f= wordLibrary.getScrambledWord(wordIdx);
+        	String s= wordLibrary.getWord(f);
+        	scrambledWord.setText(wordLibrary.getWord(s));
+        }
 
         feedbackLabel.setText(" ");
         scrambledWord.setText(wordLibrary.getScrambledWord(wordIdx));
