@@ -155,10 +155,17 @@ final class StaticWordLibrary extends WordLibrary {
     public String Scramble(int idx) {
     	//1文字ずつの配列に直す
     	char[] chars = WORD_LIST[idx].toCharArray();
-    	
     	//並び替える
     	Arrays.sort(chars);
-
+    	String Scrambledword = new String(chars);
+    	return Scrambledword;
+    }
+    
+    public String getWord(String word) {
+    	//1文字ずつの配列に直す
+    	char[] chars = word.toCharArray();
+    	//並び替える
+    	Arrays.sort(chars);
     	String Scrambledword = new String(chars);
     	return Scrambledword;
     }
